@@ -2,8 +2,16 @@
 
 1. install needed packages as so:
 
-pip install requirements.txt
 
-And then run with
+```
+pip install -r requirements.txt
 
+```
+
+2. And then run with
+
+
+```
 python main.py
+
+```
