@@ -14,9 +14,9 @@ class BackupConfig():
                 config = json.load(file)
                 self.cycle = config['backup_cycle']
                 self.input = config['input']
-                self.output = config['output']                   
+                self.output = config['output']                
         except:
-                print("Config.json file not found. Creating one with defaults..")
+                print("config.json file not found. Creating one with defaults..")
                 in_path = input("Enter path into backuppable folder:")
                 out_path = input("Enter output path:")
                 cycle = input("How often should we backup the files? (in seconds):")
@@ -29,9 +29,6 @@ class BackupConfig():
                 self.cycle = default_config['backup_cycle']
                 self.input = default_config['input']
                 self.output = default_config['output']
-
-
-
 
     def getCycle(self):
         return self.cycle

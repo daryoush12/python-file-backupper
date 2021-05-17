@@ -23,6 +23,8 @@ async def main():
             await asyncio.sleep(settings.cycle)
     except DistutilsFileError:
         print("Provided folder or file not found. Check your configurations.")
+    except: 
+        print("Unknown error please contact author for help.")
         
     
 asyncio.run(main())
