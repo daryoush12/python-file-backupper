@@ -14,7 +14,8 @@ class BackupConfig():
                 config = json.load(file)
                 self.cycle = config['backup_cycle']
                 self.input = config['input']
-                self.output = config['output']                
+                self.output = config['output']     
+                self.cleanup = config['cleanup_cycle']           
         except:
                 print("config.json file not found. Creating one with defaults..")
                 in_path = input("Enter path into backuppable folder:")

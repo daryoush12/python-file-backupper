@@ -1,1 +1,6 @@
-{ "input": "D:\\New folder", "output": "D:\\backupps", "backup_cycle": 10 }
+{
+  "input": "D:\\New folder",
+  "output": "D:\\backupps",
+  "backup_cycle": 60,
+  "cleanup_cycle": 86400
+}
